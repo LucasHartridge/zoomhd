@@ -1,0 +1,232 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp1.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="wwwroot\app\content\css\bootstrap.css" />
+    <Content Include="wwwroot\app\content\css\fasthover.css" />
+    <Content Include="wwwroot\app\content\css\flexslider.css" />
+    <Content Include="wwwroot\app\content\css\jquery.countdown.css" />
+    <Content Include="wwwroot\app\content\css\popuo-box.css" />
+    <Content Include="wwwroot\app\content\css\style.css" />
+    <Content Include="wwwroot\app\content\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="wwwroot\app\content\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="wwwroot\app\content\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="wwwroot\app\content\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="wwwroot\app\content\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="wwwroot\app\content\images\1.jpg" />
+    <Content Include="wwwroot\app\content\images\1.png" />
+    <Content Include="wwwroot\app\content\images\10.jpg" />
+    <Content Include="wwwroot\app\content\images\10.png" />
+    <Content Include="wwwroot\app\content\images\11.jpg" />
+    <Content Include="wwwroot\app\content\images\11.png" />
+    <Content Include="wwwroot\app\content\images\12.jpg" />
+    <Content Include="wwwroot\app\content\images\13.jpg" />
+    <Content Include="wwwroot\app\content\images\14.jpg" />
+    <Content Include="wwwroot\app\content\images\15.jpg" />
+    <Content Include="wwwroot\app\content\images\16.jpg" />
+    <Content Include="wwwroot\app\content\images\17.jpg" />
+    <Content Include="wwwroot\app\content\images\18.jpg" />
+    <Content Include="wwwroot\app\content\images\19.jpg" />
+    <Content Include="wwwroot\app\content\images\2.jpg" />
+    <Content Include="wwwroot\app\content\images\2.png" />
+    <Content Include="wwwroot\app\content\images\20.jpg" />
+    <Content Include="wwwroot\app\content\images\21.jpg" />
+    <Content Include="wwwroot\app\content\images\22.jpg" />
+    <Content Include="wwwroot\app\content\images\23.jpg" />
+    <Content Include="wwwroot\app\content\images\24.jpg" />
+    <Content Include="wwwroot\app\content\images\25.jpg" />
+    <Content Include="wwwroot\app\content\images\26.jpg" />
+    <Content Include="wwwroot\app\content\images\27.jpg" />
+    <Content Include="wwwroot\app\content\images\28.jpg" />
+    <Content Include="wwwroot\app\content\images\29.jpg" />
+    <Content Include="wwwroot\app\content\images\3.jpg" />
+    <Content Include="wwwroot\app\content\images\3.png" />
+    <Content Include="wwwroot\app\content\images\30.jpg" />
+    <Content Include="wwwroot\app\content\images\31.jpg" />
+    <Content Include="wwwroot\app\content\images\32.jpg" />
+    <Content Include="wwwroot\app\content\images\33.jpg" />
+    <Content Include="wwwroot\app\content\images\34.jpg" />
+    <Content Include="wwwroot\app\content\images\35.jpg" />
+    <Content Include="wwwroot\app\content\images\36.jpg" />
+    <Content Include="wwwroot\app\content\images\37.jpg" />
+    <Content Include="wwwroot\app\content\images\38.jpg" />
+    <Content Include="wwwroot\app\content\images\39.jpg" />
+    <Content Include="wwwroot\app\content\images\4.jpg" />
+    <Content Include="wwwroot\app\content\images\4.png" />
+    <Content Include="wwwroot\app\content\images\40.jpg" />
+    <Content Include="wwwroot\app\content\images\41.jpg" />
+    <Content Include="wwwroot\app\content\images\42.jpg" />
+    <Content Include="wwwroot\app\content\images\43.jpg" />
+    <Content Include="wwwroot\app\content\images\44.jpg" />
+    <Content Include="wwwroot\app\content\images\45.jpg" />
+    <Content Include="wwwroot\app\content\images\46.jpg" />
+    <Content Include="wwwroot\app\content\images\47.jpg" />
+    <Content Include="wwwroot\app\content\images\48-.jpg" />
+    <Content Include="wwwroot\app\content\images\48.jpg" />
+    <Content Include="wwwroot\app\content\images\49-.jpg" />
+    <Content Include="wwwroot\app\content\images\49.jpg" />
+    <Content Include="wwwroot\app\content\images\5.jpg" />
+    <Content Include="wwwroot\app\content\images\5.png" />
+    <Content Include="wwwroot\app\content\images\51.jpg" />
+    <Content Include="wwwroot\app\content\images\53.jpg" />
+    <Content Include="wwwroot\app\content\images\54.jpg" />
+    <Content Include="wwwroot\app\content\images\55.jpg" />
+    <Content Include="wwwroot\app\content\images\56.jpg" />
+    <Content Include="wwwroot\app\content\images\57.jpg" />
+    <Content Include="wwwroot\app\content\images\58.jpg" />
+    <Content Include="wwwroot\app\content\images\59.jpg" />
+    <Content Include="wwwroot\app\content\images\6.jpg" />
+    <Content Include="wwwroot\app\content\images\6.png" />
+    <Content Include="wwwroot\app\content\images\60.jpg" />
+    <Content Include="wwwroot\app\content\images\61.jpg" />
+    <Content Include="wwwroot\app\content\images\62.jpg" />
+    <Content Include="wwwroot\app\content\images\63.jpg" />
+    <Content Include="wwwroot\app\content\images\64.jpg" />
+    <Content Include="wwwroot\app\content\images\65.jpg" />
+    <Content Include="wwwroot\app\content\images\66.jpg" />
+    <Content Include="wwwroot\app\content\images\67.jpg" />
+    <Content Include="wwwroot\app\content\images\68.jpg" />
+    <Content Include="wwwroot\app\content\images\69.jpg" />
+    <Content Include="wwwroot\app\content\images\7.jpg" />
+    <Content Include="wwwroot\app\content\images\7.png" />
+    <Content Include="wwwroot\app\content\images\70.jpg" />
+    <Content Include="wwwroot\app\content\images\71.jpg" />
+    <Content Include="wwwroot\app\content\images\72.jpg" />
+    <Content Include="wwwroot\app\content\images\73.jpg" />
+    <Content Include="wwwroot\app\content\images\74.jpg" />
+    <Content Include="wwwroot\app\content\images\75.jpg" />
+    <Content Include="wwwroot\app\content\images\76.jpg" />
+    <Content Include="wwwroot\app\content\images\77.jpg" />
+    <Content Include="wwwroot\app\content\images\8.jpg" />
+    <Content Include="wwwroot\app\content\images\8.png" />
+    <Content Include="wwwroot\app\content\images\9.jpg" />
+    <Content Include="wwwroot\app\content\images\9.png" />
+    <Content Include="wwwroot\app\content\images\a.jpg" />
+    <Content Include="wwwroot\app\content\images\arrow.png" />
+    <Content Include="wwwroot\app\content\images\b.jpg" />
+    <Content Include="wwwroot\app\content\images\b1.jpg" />
+    <Content Include="wwwroot\app\content\images\b3.jpg" />
+    <Content Include="wwwroot\app\content\images\bag.png" />
+    <Content Include="wwwroot\app\content\images\banner2.jpg" />
+    <Content Include="wwwroot\app\content\images\banner3.jpg" />
+    <Content Include="wwwroot\app\content\images\banner4.jpg" />
+    <Content Include="wwwroot\app\content\images\banner5.jpg" />
+    <Content Include="wwwroot\app\content\images\banner6.jpg" />
+    <Content Include="wwwroot\app\content\images\banner7.jpg" />
+    <Content Include="wwwroot\app\content\images\banner8.jpg" />
+    <Content Include="wwwroot\app\content\images\banner9.jpg" />
+    <Content Include="wwwroot\app\content\images\c.jpg" />
+    <Content Include="wwwroot\app\content\images\c1.jpg" />
+    <Content Include="wwwroot\app\content\images\c2.jpg" />
+    <Content Include="wwwroot\app\content\images\c3.jpg" />
+    <Content Include="wwwroot\app\content\images\c4.jpg" />
+    <Content Include="wwwroot\app\content\images\c5.jpg" />
+    <Content Include="wwwroot\app\content\images\c6.jpg" />
+    <Content Include="wwwroot\app\content\images\c7.jpg" />
+    <Content Include="wwwroot\app\content\images\c8.jpg" />
+    <Content Include="wwwroot\app\content\images\c9.jpg" />
+    <Content Include="wwwroot\app\content\images\check.png" />
+    <Content Include="wwwroot\app\content\images\close.png" />
+    <Content Include="wwwroot\app\content\images\img-sp.png" />
+    <Content Include="wwwroot\app\content\images\j1.jpg" />
+    <Content Include="wwwroot\app\content\images\j2.jpg" />
+    <Content Include="wwwroot\app\content\images\j3.jpg" />
+    <Content Include="wwwroot\app\content\images\j4.jpg" />
+    <Content Include="wwwroot\app\content\images\j5.jpg" />
+    <Content Include="wwwroot\app\content\images\j6.jpg" />
+    <Content Include="wwwroot\app\content\images\j7.jpg" />
+    <Content Include="wwwroot\app\content\images\j8.jpg" />
+    <Content Include="wwwroot\app\content\images\j9.jpg" />
+    <Content Include="wwwroot\app\content\images\left-arrow.png" />
+    <Content Include="wwwroot\app\content\images\p1.jpg" />
+    <Content Include="wwwroot\app\content\images\p2.jpg" />
+    <Content Include="wwwroot\app\content\images\p3.jpg" />
+    <Content Include="wwwroot\app\content\images\p4.jpg" />
+    <Content Include="wwwroot\app\content\images\p5.jpg" />
+    <Content Include="wwwroot\app\content\images\p6.jpg" />
+    <Content Include="wwwroot\app\content\images\p7.jpg" />
+    <Content Include="wwwroot\app\content\images\p8.jpg" />
+    <Content Include="wwwroot\app\content\images\p9.jpg" />
+    <Content Include="wwwroot\app\content\images\r1.jpg" />
+    <Content Include="wwwroot\app\content\images\r2.jpg" />
+    <Content Include="wwwroot\app\content\images\r3.jpg" />
+    <Content Include="wwwroot\app\content\images\r4.jpg" />
+    <Content Include="wwwroot\app\content\images\r5.jpg" />
+    <Content Include="wwwroot\app\content\images\r6.jpg" />
+    <Content Include="wwwroot\app\content\images\r7.jpg" />
+    <Content Include="wwwroot\app\content\images\r8.jpg" />
+    <Content Include="wwwroot\app\content\images\r9.jpg" />
+    <Content Include="wwwroot\app\content\images\right-arrow.png" />
+    <Content Include="wwwroot\app\content\images\s1.jpg" />
+    <Content Include="wwwroot\app\content\images\s2.jpg" />
+    <Content Include="wwwroot\app\content\images\s3.jpg" />
+    <Content Include="wwwroot\app\content\images\s4.jpg" />
+    <Content Include="wwwroot\app\content\images\s5.jpg" />
+    <Content Include="wwwroot\app\content\images\s6.jpg" />
+    <Content Include="wwwroot\app\content\images\s7.jpg" />
+    <Content Include="wwwroot\app\content\images\s8.jpg" />
+    <Content Include="wwwroot\app\content\images\s9.jpg" />
+    <Content Include="wwwroot\app\content\images\ss1.jpg" />
+    <Content Include="wwwroot\app\content\images\ss2.jpg" />
+    <Content Include="wwwroot\app\content\images\ss3.jpg" />
+    <Content Include="wwwroot\app\content\images\ss4.jpg" />
+    <Content Include="wwwroot\app\content\images\ss5.jpg" />
+    <Content Include="wwwroot\app\content\images\ss6.jpg" />
+    <Content Include="wwwroot\app\content\images\ss7.jpg" />
+    <Content Include="wwwroot\app\content\images\ss8.jpg" />
+    <Content Include="wwwroot\app\content\images\ss9.jpg" />
+    <Content Include="wwwroot\app\content\images\star-.png" />
+    <Content Include="wwwroot\app\content\images\star.png" />
+    <Content Include="wwwroot\app\content\images\t1.jpg" />
+    <Content Include="wwwroot\app\content\images\t2.jpg" />
+    <Content Include="wwwroot\app\content\images\t3.jpg" />
+    <Content Include="wwwroot\app\content\images\t4.jpg" />
+    <Content Include="wwwroot\app\content\images\t5.jpg" />
+    <Content Include="wwwroot\app\content\images\t6.jpg" />
+    <Content Include="wwwroot\app\content\images\t7.jpg" />
+    <Content Include="wwwroot\app\content\images\t8.jpg" />
+    <Content Include="wwwroot\app\content\images\t9.jpg" />
+    <Content Include="wwwroot\app\content\images\w1.jpg" />
+    <Content Include="wwwroot\app\content\images\w2.jpg" />
+    <Content Include="wwwroot\app\content\images\w3.jpg" />
+    <Content Include="wwwroot\app\content\images\w4.jpg" />
+    <Content Include="wwwroot\app\content\images\w5.jpg" />
+    <Content Include="wwwroot\app\content\images\w6.jpg" />
+    <Content Include="wwwroot\app\content\images\w7.jpg" />
+    <Content Include="wwwroot\app\content\images\w8.jpg" />
+    <Content Include="wwwroot\app\content\images\w9.jpg" />
+    <Content Include="wwwroot\app\scripts\app.js" />
+    <Content Include="wwwroot\app\scripts\bootstrap-3.1.1.min.js" />
+    <Content Include="wwwroot\app\scripts\easyResponsiveTabs.js" />
+    <Content Include="wwwroot\app\scripts\imagezoom.js" />
+    <Content Include="wwwroot\app\scripts\jquery.countdown.js" />
+    <Content Include="wwwroot\app\scripts\jquery.flexisel.js" />
+    <Content Include="wwwroot\app\scripts\jquery.flexslider.js" />
+    <Content Include="wwwroot\app\scripts\jquery.magnific-popup.js" />
+    <Content Include="wwwroot\app\scripts\jquery.min.js" />
+    <Content Include="wwwroot\app\scripts\jquery.wmuSlider.js" />
+    <Content Include="wwwroot\app\scripts\script.js" />
+    <Content Include="wwwroot\app\scripts\simpleCart.min.js" />
+    <Content Include="wwwroot\index.html" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\app\controller\" />
+    <Folder Include="wwwroot\app\services\" />
+    <Folder Include="wwwroot\app\views\layout\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore" Version="1.1.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="1.1.3" />
+    <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="1.1.1" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="1.1.2" />
+  </ItemGroup>
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="1.0.1" />
+  </ItemGroup>
+
+</Project>
