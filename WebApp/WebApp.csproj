@@ -192,6 +192,9 @@
     <Content Include="wwwroot\app\content\images\j8.jpg" />
     <Content Include="wwwroot\app\content\images\j9.jpg" />
     <Content Include="wwwroot\app\content\images\left-arrow.png" />
+    <Content Include="wwwroot\app\content\images\logo\200x200 logo.png" />
+    <Content Include="wwwroot\app\content\images\logo\favicon-32x32.png" />
+    <Content Include="wwwroot\app\content\images\logo\favicon-96x96.png" />
     <Content Include="wwwroot\app\content\images\p1.jpg" />
     <Content Include="wwwroot\app\content\images\p2.jpg" />
     <Content Include="wwwroot\app\content\images\p3.jpg" />
@@ -287,6 +290,7 @@
     <Content Include="wwwroot\app\scripts\jquery.wmuSlider.js" />
     <Content Include="wwwroot\app\scripts\script.js" />
     <Content Include="wwwroot\app\scripts\simpleCart.min.js" />
+    <Content Include="wwwroot\app\views\home\home.html" />
     <Content Include="wwwroot\index.html" />
   </ItemGroup>
 

@@ -1,50 +1,45 @@
-﻿var app = angular.module('zoomhdapp', ["ngRoute", "ngCookies"])
-app.config(function ($routeProvider) {
-    $routeProvider
-        .when("/home", {
-            templateUrl: "app/views/inicio/home.html",
-            controller: 'usuarioController'
-        })
-        .when("/usuariocrear", {
-            templateUrl: "app/views/usuario/registrarse.html",
-            controller: 'usuarioController'
-        })
-        .when("/usuariologin", {
-            templateUrl: "app/views/usuario/login.html",
-            controller: 'usuarioController',
-        })
-        .when("/usuariotodos", {
-            templateUrl: "app/views/usuario/lista.html",
-            controller: 'usuarioController',
-        })
-        .when("/bitacoratodas", {
-            templateUrl: "app/views/admin/bitacora/lista.html",
-            controller: 'bitacoraController',
-        })
-    //$routeProvider.otherwise({ redirectTo: "/home" });
-});
+﻿var app = angular.module('zoomhdapp', ['ui.router'])
 
 
-app.run(['$rootScope', '$location', '$cookieStore', '$http', '$window',
-    function ($rootScope, $location, $cookieStore, $http, $window) {
-        // keep user logged in after page refresh
-        $rootScope.usuario = $cookieStore.get('usuario') || {};
+app.config(['$stateProvider', '$urlRouterProvider', '$httpProvider', function ($stateProvider, $urlRouterProvider, $httpProvider) {
+    $urlRouterProvider.otherwise('/');
+    $stateProvider
+        //Layout
+        .state('app', {
+            //abstract: true,
+            templateUrl: '/index.html',
+        })
 
-        if ($rootScope.usuario) {
-            $http.defaults.headers.common['Authorization'] = 'Basic ' + $rootScope.usuario.authdata; // jshint ignore:line
-        }
+        //.state('app.main', {
+        .state('main', {
+            url: '/',
+            templateUrl: "app/views/home/home.html",
+            //controller: 'mainController'
+        })
 
-        $rootScope.$on('$locationChangeStart', function (event, next, current) {
-            // redirect to login page if not logged in
-            if ($location.path() !== '/usuariologin' && !$rootScope.usuario.email) {
-                if ($location.path() !== '/usuariocrear') {
-                    if ($location.path() !== '/home') {
-                        $location.path('usuariologin');
-                    }
-                }
-            }
-            if (($location.path() == '/usuariologin' || $location.path() == '/usuariocrear') && $rootScope.usuario.email) {
-                $location.path('usuariotodos');
-            }
-        });
-    }]);
+}]);
+
+
+//app.run(['$rootScope', '$location', '$cookieStore', '$http', '$window',
+//    function ($rootScope, $location, $cookieStore, $http, $window) {
+//        // keep user logged in after page refresh
+//        $rootScope.usuario = $cookieStore.get('usuario') || {};
+
+//        if ($rootScope.usuario) {
+//            $http.defaults.headers.common['Authorization'] = 'Basic ' + $rootScope.usuario.authdata; // jshint ignore:line
+//        }
+
+//        $rootScope.$on('$locationChangeStart', function (event, next, current) {
+//            // redirect to login page if not logged in
+//            if ($location.path() !== '/usuariologin' && !$rootScope.usuario.email) {
+//                if ($location.path() !== '/usuariocrear') {
+//                    if ($location.path() !== '/home') {
+//                        $location.path('usuariologin');
+//                    }
+//                }
+//            }
+//            if (($location.path() == '/usuariologin' || $location.path() == '/usuariocrear') && $rootScope.usuario.email) {
+//                $location.path('usuariotodos');
+//            }
+//        });
+//    }]);
