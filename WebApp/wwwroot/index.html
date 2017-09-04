@@ -156,7 +156,7 @@
                 </div>
             </div>
             <div class="cart box_1">
-                <a href="checkout.html">
+                <a ui-sref="carrito">
                     <div class="total">
                         <span class="simpleCart_total"></span> (<span id="simpleCart_quantity" class="simpleCart_quantity"></span> items)
                     </div>
@@ -183,21 +183,21 @@
                 </div>
                 <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="index.html" class="act">Home</a></li>
+                        <li class="active"><a ui-sref="main" class="act">Home</a></li>
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Categorías <b class="caret"></b></a>
+                            <a href="" class="dropdown-toggle" data-toggle="dropdown">Categorías <b class="caret"></b></a>
                             <ul class="dropdown-menu">
-                                <li><a href=""><i class="fa fa-desktop"></i><span>   TECNOLOGIA</span></a>
-                                <li><a href=""><i class="fa fa-cutlery"></i><span> COMIDA</span></a>
-                                <li><a href=""><i class="fa fa-paper-plane"></i><span> VIAJES</span></a>
-                                <li><a href=""><i class="fa fa-futbol-o"></i><span> DEPORTES</span></a>
-                                <li><a href=""><i class="fa fa-gamepad"></i><span> VIDEO JUEGOS</span></a>
-                                <li><a href=""><i class="fa fa-trademark"></i><span> ANIME</span></a>
-                                <li><a href=""><i class="fa fa-paw"></i><span> ANIMALES</span></a>
+                                <li><a ui-sref="catalogo"><i class="fa fa-desktop"></i><span>   TECNOLOGIA</span></a>
+                                <li><a ui-sref="catalogo"><i class="fa fa-cutlery"></i><span> COMIDA</span></a>
+                                <li><a ui-sref="catalogo"><i class="fa fa-paper-plane"></i><span> VIAJES</span></a>
+                                <li><a ui-sref="catalogo"><i class="fa fa-futbol-o"></i><span> DEPORTES</span></a>
+                                <li><a ui-sref="catalogo"><i class="fa fa-gamepad"></i><span> VIDEO JUEGOS</span></a>
+                                <li><a ui-sref="catalogo"><i class="fa fa-trademark"></i><span> ANIME</span></a>
+                                <li><a ui-sref="catalogo"><i class="fa fa-paw"></i><span> ANIMALES</span></a>
                             </ul>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="short-codes.html">Short Codes</a></li>
-                        <li><a href="mail.html">Contactenos</a></li>
+                        <li><a ui-sref="aboutus">Acerca De</a></li>
+                        <li><a ui-sref="faq">FAQ</a></li>
+                        <li><a ui-sref="contacto">Contactenos</a></li>
                     </ul>
                 </div>
             </nav>
@@ -225,36 +225,34 @@
                 <div class="col-md-3 w3_footer_grid">
                     <h3>Información</h3>
                     <ul class="info">
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="mail.html">Contact Us</a></li>
-                        <li><a href="short-codes.html">Short Codes</a></li>
-                        <li><a href="faq.html">FAQ's</a></li>
-                        <li><a href="products.html">Special Products</a></li>
+                        <li><a ui-sref="aboutus">Acerca De</a></li>
+                        <li><a ui-sref="contacto">Contacto</a></li>
+                        <li><a ui-sref="faq">FAQ's</a></li>
                     </ul>
                 </div>
                 <div class="col-md-3 w3_footer_grid">
                     <h3>Categorias</h3>
                     <ul class="info">
-                        <li><a href="dresses.html">Video Juegos</a></li>
-                        <li><a href="sweaters.html">Animales</a></li>
-                        <li><a href="shirts.html">Deportes</a></li>
-                        <li><a href="sarees.html">Comida</a></li>
-                        <li><a href="skirts.html">Paisajes</a></li>
+                        <li><a ui-sref="catalogo">Video Juegos</a></li>
+                        <li><a ui-sref="catalogo">Animales</a></li>
+                        <li><a ui-sref="catalogo">Deportes</a></li>
+                        <li><a ui-sref="catalogo">Comida</a></li>
+                        <li><a ui-sref="catalogo"">Paisajes</a></li>
                     </ul>
                 </div>
                 <div class="col-md-3 w3_footer_grid">
                     <h3>Perfil</h3>
                     <ul class="info">
-                        <li><a href="products.html">Tienda de Verano</a></li>
-                        <li><a href="checkout.html">Mi Carrito</a></li>
+                        <li><a ui-sref="catalogo">Tienda de Verano</a></li>
+                        <li><a ui-sref="carrito">Mi Carrito</a></li>
                     </ul>
                     <h4>Siguenos</h4>
                     <div class="agileits_social_button">
                         <ul>
-                            <li><a href="#" class="facebook"> </a></li>
-                            <li><a href="#" class="twitter"> </a></li>
-                            <li><a href="#" class="google"> </a></li>
-                            <li><a href="#" class="pinterest"> </a></li>
+                            <li><a href="" class="facebook"> </a></li>
+                            <li><a href="" class="twitter"> </a></li>
+                            <li><a href="" class="google"> </a></li>
+                            <li><a href="" class="pinterest"> </a></li>
                         </ul>
                     </div>
                 </div>
@@ -264,7 +262,7 @@
         <div class="footer-copy">
             <div class="footer-copy1">
                 <div class="footer-copy-pos">
-                    <a href="#home1" class="scroll"><img src="app/content/images/arrow.png" alt=" " class="img-responsive" /></a>
+                    <a  ui-sref="main" class="scroll"><img src="app/content/images/arrow.png" alt=" " class="img-responsive" /></a>
                 </div>
             </div>
             <div class="container">

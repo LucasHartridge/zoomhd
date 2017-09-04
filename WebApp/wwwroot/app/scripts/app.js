@@ -1,6 +1,5 @@
 ﻿var app = angular.module('zoomhdapp', ['ui.router'])
 
-
 app.config(['$stateProvider', '$urlRouterProvider', '$httpProvider', function ($stateProvider, $urlRouterProvider, $httpProvider) {
     $urlRouterProvider.otherwise('/');
     $stateProvider
@@ -12,8 +11,38 @@ app.config(['$stateProvider', '$urlRouterProvider', '$httpProvider', function ($
 
         //.state('app.main', {
         .state('main', {
-            url: '/',
+            url: '/', 
             templateUrl: "app/views/home/home.html",
+            //controller: 'mainController'
+        })
+
+        .state('contacto', {
+            url: '/contacto',
+            templateUrl: "app/views/home/contacto.html",
+            //controller: 'mainController'
+        })
+
+        .state('catalogo', {
+            url: '/catalogo',
+            templateUrl: "app/views/producto/catalogo.html",
+            //controller: 'mainController'
+        })
+
+        .state('carrito', {
+            url: '/carrito',
+            templateUrl: "app/views/producto/carrito.html",
+            //controller: 'mainController'
+        })
+
+        .state('aboutus', {
+            url: '/aboutus',
+            templateUrl: "app/views/home/aboutus.html",
+            //controller: 'mainController'
+        })
+
+        .state('faq', {
+            url: '/faq',
+            templateUrl: "app/views/home/faq.html",
             //controller: 'mainController'
         })
 

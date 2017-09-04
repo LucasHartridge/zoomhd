@@ -290,7 +290,12 @@
     <Content Include="wwwroot\app\scripts\jquery.wmuSlider.js" />
     <Content Include="wwwroot\app\scripts\script.js" />
     <Content Include="wwwroot\app\scripts\simpleCart.min.js" />
+    <Content Include="wwwroot\app\views\home\aboutus.html" />
+    <Content Include="wwwroot\app\views\home\contacto.html" />
+    <Content Include="wwwroot\app\views\home\faq.html" />
     <Content Include="wwwroot\app\views\home\home.html" />
+    <Content Include="wwwroot\app\views\producto\carrito.html" />
+    <Content Include="wwwroot\app\views\producto\catalogo.html" />
     <Content Include="wwwroot\index.html" />
   </ItemGroup>
 
