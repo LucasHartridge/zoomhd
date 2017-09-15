@@ -1,52 +1,92 @@
 ﻿var app = angular.module('zoomhdapp', ['ui.router'])
 
 app.config(['$stateProvider', '$urlRouterProvider', '$httpProvider', function ($stateProvider, $urlRouterProvider, $httpProvider) {
-    $urlRouterProvider.otherwise('/');
     $stateProvider
-        //Layout
-        .state('app', {
-            //abstract: true,
-            templateUrl: '/index.html',
+        // COMMON VIEW
+        .state('root', {
+            url: '',
+            abstract: true,
+            controller: 'MainCtrl',
+            //templateUrl: 'index.html'
         })
 
-        //.state('app.main', {
-        .state('main', {
-            url: '/', 
-            templateUrl: "app/views/home/home.html",
-            //controller: 'mainController'
+        // USER APP VIEWS
+        .state('root.layout', {
+            url: '',
+            abstract: true,
+            templateUrl: 'app/views/layout/layout.html',
+            css: 'app/content/css/style.css',
+            //controller: 'MainController',
+            //controllerAs: 'main'
         })
-
-        .state('contacto', {
+        .state('root.layout.home', {
+            url: '/home',
+            templateUrl: 'app/views/home/home.html',
+            css: 'app/content/css/style.css',
+            //controller: 'MainController',
+            //controllerAs: 'main'
+        })
+        .state('root.layout.contacto', {
             url: '/contacto',
-            templateUrl: "app/views/home/contacto.html",
-            //controller: 'mainController'
+            templateUrl: 'app/views/home/contacto.html',
+            css: 'app/content/css/style.css',
+            //controller: 'CandidateProfileController',
+            //controllerAs: 'profile'
         })
 
-        .state('catalogo', {
+        .state('root.layout.catalogo', {
             url: '/catalogo',
             templateUrl: "app/views/producto/catalogo.html",
+            css: 'app/content/css/style.css',
             //controller: 'mainController'
         })
 
-        .state('carrito', {
+        .state('root.layout.carrito', {
             url: '/carrito',
             templateUrl: "app/views/producto/carrito.html",
+            css: 'app/content/css/style.css',
             //controller: 'mainController'
         })
 
-        .state('aboutus', {
+        .state('root.layout.aboutus', {
             url: '/aboutus',
             templateUrl: "app/views/home/aboutus.html",
+            css: 'app/content/css/style.css',
             //controller: 'mainController'
         })
 
-        .state('faq', {
+        .state('root.layout.faq', {
             url: '/faq',
             templateUrl: "app/views/home/faq.html",
+            css: 'app/content/css/style.css',
             //controller: 'mainController'
         })
 
+        //ADMIN LAYOUT VIEWS
+        .state('root.admin', {
+            url: '',
+            abstract: true,
+            templateUrl: 'app/views/admin/index.html',
+            css: 'app/content/css/main.css',
+        })
+        .state('root.admin.homepage', {
+            url: '/admin',
+            css: 'app/content/css/main.css',
+            //templateUrl: 'app/views/admin/index.html',
+        })
+    $urlRouterProvider.otherwise('/home');
 }]);
+
+app.controller('MainCtrl', function ($scope, $rootScope, $state, $stateParams) {
+    $scope.$watch(function () { return $state.current.css; }, function (value) {
+        $scope.css = value;
+
+        //$scope.$on('$routeChangeSuccess', function () {
+            
+        //});
+        //console.log($scope.css);
+    });
+});
 
 
 //app.run(['$rootScope', '$location', '$cookieStore', '$http', '$window',

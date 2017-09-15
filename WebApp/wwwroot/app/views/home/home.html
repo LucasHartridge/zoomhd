@@ -26,20 +26,20 @@
                     <iframe src="https://player.vimeo.com/video/23259282?title=0&byline=0&portrait=0"></iframe>
                 </div>
                 <script>
-                                $(document).ready(function () {
-                                    $('.popup-with-zoom-anim').magnificPopup({
-                                        type: 'inline',
-                                        fixedContentPos: false,
-                                        fixedBgPos: true,
-                                        overflowY: 'auto',
-                                        closeBtnInside: true,
-                                        preloader: false,
-                                        midClick: true,
-                                        removalDelay: 300,
-                                        mainClass: 'my-mfp-zoom-in'
-                                    });
+                    $(document).ready(function () {
+                        $('.popup-with-zoom-anim').magnificPopup({
+                            type: 'inline',
+                            fixedContentPos: false,
+                            fixedBgPos: true,
+                            overflowY: 'auto',
+                            closeBtnInside: true,
+                            preloader: false,
+                            midClick: true,
+                            removalDelay: 300,
+                            mainClass: 'my-mfp-zoom-in'
+                        });
 
-                                });
+                    });
                 </script>
             </div>
             <!-- TAB PANEL WITH CATEGORIES -->
@@ -48,8 +48,8 @@
                     <ul id="myTab" class="nav nav-tabs" role="tablist">
                         <li role="presentation" class="active"><a href="#watches" onclick="return false;" class="service" role="tab" id="watches-tab" data-toggle="tab" aria-controls="watches">Deportes</a></li>
                         <li role="presentation"><a href="#home" onclick="return false;" class="service" id="home-tab" role="tab" data-toggle="tab" aria-controls="home">Comida</a></li>
-                        <li role="presentation"><a href="#skirts" onclick="return false;" class="service"role="tab" id="skirts-tab" data-toggle="tab" aria-controls="skirts">Paisajes</a></li>
-                        <li role="presentation"><a href="#sandals" onclick="return false;" class="service"role="tab" id="sandals-tab" data-toggle="tab" aria-controls="sandals">Animales</a></li>
+                        <li role="presentation"><a href="#skirts" onclick="return false;" class="service" role="tab" id="skirts-tab" data-toggle="tab" aria-controls="skirts">Paisajes</a></li>
+                        <li role="presentation"><a href="#sandals" onclick="return false;" class="service" role="tab" id="sandals-tab" data-toggle="tab" aria-controls="sandals">Animales</a></li>
                     </ul>
                     <!-- FIRST TAB INSIDE COMIDA -->
                     <!-- FIRST TAB DEPORTES -->
@@ -67,7 +67,7 @@
                                         <div class="w3_hs_bottom">
                                             <ul>
                                                 <li>
-                                                    <a href="#" onclick="return false;" class="service"  data-toggle="modal" data-target="#myModal2"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
+                                                    <a href="#" onclick="return false;" class="service" data-toggle="modal" data-target="#myModal2"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
                                                 </li>
                                             </ul>
                                         </div>
@@ -448,7 +448,7 @@
                 </div>
                 <script src="app/scripts/jquery.wmuSlider.js"></script>
                 <script>
-                                $('.example1').wmuSlider();
+                    $('.example1').wmuSlider();
                 </script>
             </div>
             <div class="col-md-5 w3agile_special_deals_grid_right">
@@ -601,31 +601,46 @@
             </ul>
         </div>
         <script type="text/javascript">
-                                $(window).load(function () {
-                                    $("#flexiselDemo1").flexisel({
-                                        visibleItems: 4,
-                                        animationSpeed: 1000,
-                                        autoPlay: true,
-                                        autoPlaySpeed: 3000,
-                                        pauseOnHover: true,
-                                        enableResponsiveBreakpoints: true,
-                                        responsiveBreakpoints: {
-                                            portrait: {
-                                                changePoint: 480,
-                                                visibleItems: 1
-                                            },
-                                            landscape: {
-                                                changePoint: 640,
-                                                visibleItems: 2
-                                            },
-                                            tablet: {
-                                                changePoint: 768,
-                                                visibleItems: 3
-                                            }
-                                        }
-                                    });
+                    $(window).on('scroll', function () {
+                        if (checkVisible($('#flexiselDemo1'))) {
+                            $("#flexiselDemo1").flexisel({
+                                visibleItems: 4,
+                                animationSpeed: 1000,
+                                autoPlay: true,
+                                autoPlaySpeed: 3000,
+                                pauseOnHover: true,
+                                enableResponsiveBreakpoints: true,
+                                responsiveBreakpoints: {
+                                    portrait: {
+                                        changePoint: 480,
+                                        visibleItems: 1
+                                    },
+                                    landscape: {
+                                        changePoint: 640,
+                                        visibleItems: 2
+                                    },
+                                    tablet: {
+                                        changePoint: 768,
+                                        visibleItems: 3
+                                    }
+                                }
+                            });
+                            $(window).off('scroll');
+                        } else {
+                            // do nothing
+                        }
+                    });
 
-                                });
+                    function checkVisible(elm, eval) {
+                        eval = eval || "object visible";
+                        var viewportHeight = $(window).height(), // Viewport Height
+                            scrolltop = $(window).scrollTop(), // Scroll Top
+                            y = $(elm).offset().top,
+                            elementHeight = $(elm).height();
+
+                        if (eval == "object visible") return ((y < (viewportHeight + scrolltop)) && (y > (scrolltop - elementHeight)));
+                    }
+
         </script>
         <script type="text/javascript" src="app/scripts/jquery.flexisel.js"></script>
     </div>

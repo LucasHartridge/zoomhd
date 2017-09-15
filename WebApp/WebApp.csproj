@@ -9,6 +9,8 @@
     <Content Include="wwwroot\app\content\css\fasthover.css" />
     <Content Include="wwwroot\app\content\css\flexslider.css" />
     <Content Include="wwwroot\app\content\css\jquery.countdown.css" />
+    <Content Include="wwwroot\app\content\css\main.css" />
+    <Content Include="wwwroot\app\content\css\main.css.map" />
     <Content Include="wwwroot\app\content\css\popuo-box.css" />
     <Content Include="wwwroot\app\content\css\style.css" />
     <Content Include="wwwroot\app\content\fonts\glyphicons-halflings-regular.eot" />
@@ -278,6 +280,21 @@
     <Content Include="wwwroot\app\content\images\w7.jpg" />
     <Content Include="wwwroot\app\content\images\w8.jpg" />
     <Content Include="wwwroot\app\content\images\w9.jpg" />
+    <Content Include="wwwroot\app\scripts\admin\main.js" />
+    <Content Include="wwwroot\app\scripts\admin\plugins\bootstrap-datepicker.min.js" />
+    <Content Include="wwwroot\app\scripts\admin\plugins\bootstrap-notify.min.js" />
+    <Content Include="wwwroot\app\scripts\admin\plugins\chart.js" />
+    <Content Include="wwwroot\app\scripts\admin\plugins\dataTables.bootstrap.min.js" />
+    <Content Include="wwwroot\app\scripts\admin\plugins\fullcalendar.min.js" />
+    <Content Include="wwwroot\app\scripts\admin\plugins\jquery-ui.custom.min.js" />
+    <Content Include="wwwroot\app\scripts\admin\plugins\jquery.dataTables.min.js" />
+    <Content Include="wwwroot\app\scripts\admin\plugins\jquery.vmap.min.js" />
+    <Content Include="wwwroot\app\scripts\admin\plugins\jquery.vmap.sampledata.js" />
+    <Content Include="wwwroot\app\scripts\admin\plugins\jquery.vmap.world.js" />
+    <Content Include="wwwroot\app\scripts\admin\plugins\moment.min.js" />
+    <Content Include="wwwroot\app\scripts\admin\plugins\pace.min.js" />
+    <Content Include="wwwroot\app\scripts\admin\plugins\select2.min.js" />
+    <Content Include="wwwroot\app\scripts\admin\plugins\sweetalert.min.js" />
     <Content Include="wwwroot\app\scripts\app.js" />
     <Content Include="wwwroot\app\scripts\bootstrap-3.1.1.min.js" />
     <Content Include="wwwroot\app\scripts\easyResponsiveTabs.js" />
@@ -290,10 +307,12 @@
     <Content Include="wwwroot\app\scripts\jquery.wmuSlider.js" />
     <Content Include="wwwroot\app\scripts\script.js" />
     <Content Include="wwwroot\app\scripts\simpleCart.min.js" />
+    <Content Include="wwwroot\app\views\admin\index.html" />
     <Content Include="wwwroot\app\views\home\aboutus.html" />
     <Content Include="wwwroot\app\views\home\contacto.html" />
     <Content Include="wwwroot\app\views\home\faq.html" />
     <Content Include="wwwroot\app\views\home\home.html" />
+    <Content Include="wwwroot\app\views\layout\layout.html" />
     <Content Include="wwwroot\app\views\producto\carrito.html" />
     <Content Include="wwwroot\app\views\producto\catalogo.html" />
     <Content Include="wwwroot\index.html" />
@@ -303,7 +322,6 @@
     <Folder Include="wwwroot\app\content\images\anime\" />
     <Folder Include="wwwroot\app\controller\" />
     <Folder Include="wwwroot\app\services\" />
-    <Folder Include="wwwroot\app\views\layout\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.0.0" />
