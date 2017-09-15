@@ -5,6 +5,15 @@
 	margin: 0 auto;
 	overflow: hidden;
 }
+
+.hs-wrapper4 {
+    width: 196px;
+    height: 260px;
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
 .hs-wrapper1{
 	width: 255px !important;
     height:340px !important;
