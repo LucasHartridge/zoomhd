@@ -69,10 +69,10 @@ app.config(['$stateProvider', '$urlRouterProvider', '$httpProvider', function ($
             templateUrl: 'app/views/admin/index.html',
             css: 'app/content/css/main.css',
         })
-        .state('root.admin.homepage', {
+        .state('root.admin.home', {
             url: '/admin',
             css: 'app/content/css/main.css',
-            //templateUrl: 'app/views/admin/index.html',
+            templateUrl: 'app/views/admin/home.html',
         })
     $urlRouterProvider.otherwise('/home');
 }]);
@@ -80,11 +80,6 @@ app.config(['$stateProvider', '$urlRouterProvider', '$httpProvider', function ($
 app.controller('MainCtrl', function ($scope, $rootScope, $state, $stateParams) {
     $scope.$watch(function () { return $state.current.css; }, function (value) {
         $scope.css = value;
-
-        //$scope.$on('$routeChangeSuccess', function () {
-            
-        //});
-        //console.log($scope.css);
     });
 });
 

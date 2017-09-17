@@ -1,4 +1,4 @@
-@charset "UTF-8";
+﻿@charset "UTF-8";
 /*!
  * Vali Admin
  * Author: Pratik Borsadiya
@@ -15515,4 +15515,11 @@ be a descendant of the grid when it is being dragged.
 
 .user .user-settings label {
   color: #666;
+}
+
+/*MY CSS*/
+
+.google-api-chart-responsive {
+    width: 100%;
+    min-height: 450px;
 }
